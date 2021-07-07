@@ -4,3 +4,8 @@ In Swagger has to exist a service controller that has to create a repository at 
 You can use the oficial Gitlab API to do this action.
 Data:
 - Host: gitlab.localhost.com:9090
+
+# Prerequisitos
+Para la prueba se utilizara un
+
+export GITLAB_HOME=$HOME/gitlab
