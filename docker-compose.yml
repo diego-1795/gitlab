@@ -1,0 +1,19 @@
+version: "3.5"
+
+services:
+  git:
+    container_name: gitlab
+    image: gitlab/gitlab-ce:12.9.10-ce.0
+    ports:
+      - "9090:80"
+      - "9043:443"
+      - "9022:22"
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'gitlab.localhost.com:9090'
+    volumes:
+      - $GITLAB_HOME/data:/var/opt/gitlab
+      - $GITLAB_HOME/logs:/var/log/gitlab
+      - $GITLAB_HOME/config:/etc/gitlab
+    restart: unless-stopped
+    hostname: gitlab.localhost.com
