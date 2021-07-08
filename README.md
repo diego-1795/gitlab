@@ -8,4 +8,6 @@ Data:
 # Prerequisitos
 Para la prueba se utilizara un
 
-export GITLAB_HOME=$HOME/gitlab
+Volumenes previamente creados para no tener que poner variable de entorno
+
+Tan sólo se ha podido hacer la primera parte, falta el tema del Swagger por falta de tiempo y que no se ha podido generar correctamente la url en la máquina que se ha utilizado para realizar la prueba
